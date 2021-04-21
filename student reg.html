@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<title></title>
+	<style>
+
+		body{
+			margin:50px;
+			background-image:url("images/m.jpg");
+			background-attachment:fixed;
+			background-size:cover;
+			font-weight:bold;
+			font-size:15px;
+		}
+		.card{
+			box-shadow: 5px 5px 10px black;
+			
+		}
+		
+		.card-header{
+			background:linear-gradient(to left,#fa6973,#a5a1f7);
+		}
+		.form-control{
+			border:1px solid black;
+		}
+		
+		button{
+			position:relative;
+			top:15px;
+			left:150px;
+			width:200px;
+			height:50px;
+			border-radius:100px;
+			font-weight:bold;
+		}
+	</style>	
+</head>
+<body>
+	<div class="container">
+	<div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+        	<div class="card">
+        		<div class="card-header">
+			        	<h2 style="font-family:Bahnschrift SemiBold"><center>Student Registration Form</center></h2>
+			    </div>
+			    <div class="card-body">    	
+			        	<div class="form-group">
+			        		First Name<font color="red">*</font> <input type="text" class="form-control">
+			        	</div>	
+
+			        	<div class="form-group">
+			        		Last Name<font color="red">*</font> <input type="text" class="form-control">
+			        	</div>	
+
+			        	<div class="form-group">
+			        		Date of Birth<input type="date" class="form-control">
+			        	</div>	
+			        	<div class="form-group">
+			        		Email <input type="email" class="form-control">
+			        	</div>	
+			        		
+			        	<div class="form-group">
+			        		Contact<font color="red">*</font> <input type="text" class="form-control" maxlength="10">
+			        	</div>	
+
+			        	<div class="form-group">
+			        		Gender <font color="red">*</font> <input type="radio" size="30" name="gn"> &nbsp male &nbsp<input type="radio" size="30" name="gn">&nbsp female
+			        	</div>	
+
+			        	<div class="form-group">
+			        		 Education <font color="red">*</font> <input type="text" class="form-control">
+			        	</div>	
+
+			        	<div class="form-group">
+			        		 Category
+			        		 <select class="form-control">
+			        		 	<option></option>
+			        		 	<option>English Speaking</option>
+			        		 	<option>Personality Depelopment</option>
+			        		 	<option>Both</option>
+			        		 </select>
+			        	</div>	
+			        	
+			        	<div class="form-group">
+			        		 Address<textarea rows="4" class="form-control"></textarea>
+			        	</div>	
+
+			        	<div class="form-group">
+			        		City<font color="red">*</font> <input type="text" class="form-control">
+			        	</div>	
+			        	
+			       
+			            <div class="form-group">
+			            	<button class="btn btn-danger">Submit</button>
+			            </div>       
+			    </div>	
+			</div>    
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    </div>
+
+<script>
+$(document).ready(function(){
+     $("input").mouseenter(function(){
+     $(this).css("border","2px solid red")	
+     })
+
+     $("input").mouseleave(function(){
+     $(this).css("border","1px solid black")	
+     })
+
+      $("textarea").mouseenter(function(){
+     $(this).css("border","2px solid red")	
+     })
+
+     $("textarea").mouseleave(function(){
+     $(this).css("border","1px solid black")	
+     })
+
+      $("select").mouseenter(function(){
+     $(this).css("border","2px solid red")	
+     })
+
+     $("select").mouseleave(function(){
+     $(this).css("border","1px solid black")	
+     })
+
+})
+
+</script>
+</body>
+</html>
